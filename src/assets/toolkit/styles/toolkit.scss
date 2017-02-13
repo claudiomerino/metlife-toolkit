@@ -1,0 +1,28 @@
+/**
+ * Toolkit styles
+ */
+
+@import 'global/reset';
+@import 'global/fonts';
+@import 'global/color';
+@import 'global/grid';
+
+.box-grid {
+	background-color: #efefef;
+	min-height: 1rem;
+	text-align: center;
+	.box-grid {
+		background-color: #ddd;
+		.box-grid {
+			background-color: #333;
+		}
+	}
+}
+
+.box-container {
+	padding: 1rem;
+}
+
+.box-large {
+	min-height: 6rem;
+}

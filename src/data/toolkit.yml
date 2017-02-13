@@ -1,0 +1,25 @@
+colors:
+  main:
+    Primary: "#0090da"
+    Primary Accent: "#0061a0"
+    Secondary: "#a4ce4e"
+    Secondary Accent: "#7a9816"
+    Terciary: "#d80a5b"
+    Terciary Accent: "#a30a46"
+    Cuaternary: "#00aca0"
+    Cuaternary Accent: "#018d83"
+    Quinary: "#5f259f"
+    Quinary Accent: "#461b75"
+  monotone:
+    Black: "#000"
+    Dark Gray 2: "#333"
+    Dark Gray: "#7f7f7f"
+    Medium Gray: "#b2b2b2"
+    Gray: "#d9d9d9"
+    Black 05: "#f2f2f2"
+
+  utility:
+    Success: "#7a9816"
+    Information: "#ffc600"
+    Error: "#db0a5b"
+    Document Note: "#eb5ecb"
