@@ -1,0 +1,59 @@
+
+	@import 'color.scss';
+
+	.u-field-input {
+		position: relative;
+	}
+
+	.u-input {
+		border: 1px solid $gray;
+		border-radius: 6px;
+		font-size: 14px;
+		outline: none;
+		padding: 10px;
+		&:focus,
+		&:hover,
+		&:active {
+			outline: none;
+		}
+	}
+
+	.u-input-text:focus + .u-label-input {
+		color: $black;
+		left: 0;
+		margin-top: -30px;
+	}
+
+	input:empty  + .u-label-input {
+	  /** input is not empty */
+	  background-color: red;
+		margin-top: -30px;
+	}
+
+	input:placeholder-shown {
+		margin-top: 30px;
+	  /** input is empty */
+	}
+
+	.u-input-text:focus {
+		border: 1px solid $primary;
+	}
+
+	.u-input-text:valid {
+		background: white;
+	}
+
+	.u-label {
+		font-size: 14px;
+		cursor: auto;
+	}
+
+	.u-label-input {
+		bottom: 0;
+		color: $medium-gray;
+		left: 10px;
+		position: absolute;
+		top: 10px;
+		transition: all .2s cubic-bezier( .4, 0, .2, 1 );
+		z-index: 10;
+	}

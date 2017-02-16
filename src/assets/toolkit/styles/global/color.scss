@@ -1,26 +1,42 @@
 // Main palette
-  $primary: #0090da;
-  $primary-accent: #0061a0;
-  $secondary: #a4ce4e;
-  $secondary-accent: #7a9816;
-  $terciary: #d80a5b;
-  $terciary-accent: #a30a46;
-  $cuaternary: #00aca0;
-  $cuaternary-accent: #018d83;
-  $quinary: #5f259f;
-  $quinary-accent: #461b75;
+  $primary: #0090DA;
+  $primary-accent: #0061A0;
+  $secondary: #A4CE4E;
+  $secondary-accent: #7A9816;
+
+// Line of business palette
+  $single: #0A3C6C;
+  $single-light: #0E5DAE;
+  $accident: #1FC2A2;
+  $accident-light: #7FEFD9;
+  $colective: #896EB3;
+  $colective-light: #BDA7F2;
+  $annuities: #EFA020;
+  $annuities-light: #FCC13D;
+  $general: #348C6F;
+  $general-light: #54D1A1;
+  $mortgages: #E57339;
+  $mortgages-light: #FA9663;
 
 // Monotone
   $black: #000;
-  $dark-gray-2: #333;
-  $dark-gray: #7f7f7f;
-  $medium-gray: #b2b2b2;
-  $gray: #d9d9d9;
-  $black-05: #f2f2f2;
+  $dark-gray-2: #3A3A3A;
+  $dark-gray: #8A8A8A;
+  $medium-gray: #BABBBB;
+  $gray: #DEDEDE;
+  $black-05: #F4F4F4;
+  $white: #FFF;
+  $green: #b7dd58;
 
 // Utility
-  $success: #7a9816;
-  $information: #ffc600;
-  $error: #db0a5b;
-  $document-note: #eb5ecb;
-  $document-note-2: #fdeef9;
+  $success: #7A9816;
+  $information: #FFC600;
+  $error: #EB4646;
+
+// Link
+  $link-rest: #007ABC;
+  $link-hover: #1A79AF;
+
+  .white {
+    color: $white;
+  }
