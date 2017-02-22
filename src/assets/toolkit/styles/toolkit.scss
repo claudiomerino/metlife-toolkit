@@ -9,10 +9,13 @@
 @import 'global/buttons';
 @import 'global/input-text';
 @import 'global/select';
+@import 'global/shadow';
+@import 'global/lists';
 
 @import 'components/nav';
 @import 'components/sub-nav';
 @import 'components/footer';
+@import 'components/cards';
 
 .box-grid {
 	background-color: #efefef;
