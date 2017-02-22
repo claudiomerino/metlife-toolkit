@@ -55,6 +55,18 @@
 		}
 	}
 
+
+	.button-link {
+		background-color: transparent;
+		border-bottom: 1px solid transparent;
+		color: $link-rest;
+		line-height: 1.2;
+		padding: 0;
+		&:hover {
+			color: $link-hover;
+		}
+	}
+
 	// Sizes
 
 	.button-full {

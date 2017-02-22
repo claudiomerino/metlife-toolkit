@@ -10,6 +10,10 @@
 @import 'global/input-text';
 @import 'global/select';
 
+@import 'components/nav';
+@import 'components/sub-nav';
+@import 'components/footer';
+
 .box-grid {
 	background-color: #efefef;
 	min-height: 1rem;

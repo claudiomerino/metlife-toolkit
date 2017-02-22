@@ -32,6 +32,7 @@
   $success: #7A9816;
   $information: #FFC600;
   $error: #EB4646;
+  $error-light: #FCECEC;
 
 // Link
   $link-rest: #007ABC;
@@ -39,4 +40,8 @@
 
   .white {
     color: $white;
+  }
+
+  .black {
+    color: $black;
   }

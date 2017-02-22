@@ -65,6 +65,14 @@
 		}
 	}
 
+	.f-link-white {
+		color: white;
+		&:hover {
+			border-bottom: 1px solid white;
+			color: white;
+		}
+	}
+
 	.f-small {
 		font-size: 14px;
 		line-height: 1.2;
@@ -74,3 +82,9 @@
 		font-size: 12px;
 		line-height: 1.2;
 	}
+
+  .f-error {
+    color: $error;
+    font-weight: 100;
+    padding: 0 10px;
+  }

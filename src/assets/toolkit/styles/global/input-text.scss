@@ -3,7 +3,6 @@
 
 	.input {
 		display: inline-block;
-		margin: 1em;
 		max-width: 350px;
 		position: relative;
 		vertical-align: top;
@@ -112,4 +111,13 @@
 	.input__field--ichiro:focus + .input__label--ichiro .input__label-content--ichiro,
 	.input--filled .input__label-content--ichiro {
 		transform: translate3d(0, -3.15em, 0) scale3d(0.8, 0.8, 1) translateZ(1px);
+	}
+
+	.input--error .input__label {
+		color: $error;
+	}
+
+	.input--error .input__field {
+		background-color: $error-light;
+		color: $error;
 	}

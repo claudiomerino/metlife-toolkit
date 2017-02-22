@@ -14,29 +14,43 @@
 	<!-- /toolkit styles -->
 
 	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.3.0/css/foundation.min.css">
 
 </head>
 <body>
 
-	{{#if fabricator}}
-		{{> f-icons}}
-		{{> f-menu}}
-		<div class="f-container">
-			{{> f-control-bar}}
-	{{/if}}
+  <div class="off-canvas-content" data-off-canvas-content>
+
+		{{#if fabricator}}
+			{{> f-icons}}
+			{{> f-menu}}
+			<div class="f-container">
+				{{> f-control-bar}}
+		{{/if}}
 
 
-	{% body %}
+		{% body %}
 
 
-	{{#if fabricator}}
-		</div>
+		{{#if fabricator}}
+			</div>
+	</div>
 	<script src="{{baseurl}}/assets/fabricator/scripts/f.js"></script>
 	{{/if}}
 
 	<!-- toolkit scripts -->
 	<script src="{{baseurl}}/assets/toolkit/scripts/toolkit.js"></script>
 	<!-- /toolkit scripts -->
+
+	<script
+	  src="https://code.jquery.com/jquery-3.1.1.js"
+	  integrity="sha256-16cdPddA6VdVInumRGo6IbivbERE8p7CQR3HzTBuELA="
+	  crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.3.0/js/foundation.min.js"></script>
+	<script>
+		$( document ).foundation();
+	</script>
 
 </body>
 </html>
