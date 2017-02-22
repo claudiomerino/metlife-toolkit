@@ -13,11 +13,16 @@
     flex: 0 1 auto;
     flex-direction: row;
     flex-wrap: wrap;
+    padding: 0 .5rem;
     margin-right: -.5rem;
     margin-left: -.5rem;
     &.reverse {
       flex-direction: row-reverse;
     }
+  }
+
+  ul.u-row {
+    margin-bottom: 0;
   }
 
   .container-fluid {
