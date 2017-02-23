@@ -22,7 +22,6 @@
 }
 
 .cs-select span {
-	color: black;
 	cursor: pointer;
 	display: block;
 	overflow: hidden;
@@ -68,7 +67,7 @@ div.cs-active {
 	position: absolute;
 	overflow: hidden;
 	width: 100%;
-	background: #fff;
+	background: $white;
 	visibility: hidden;
 }
 
@@ -103,7 +102,6 @@ div.cs-active {
 .cs-skin-border {
 	background: transparent;
 	font-size: 1em;
-	max-width: 600px;
 }
 
 @media screen and (max-width: 30em) {
@@ -118,8 +116,8 @@ div.cs-active {
 }
 
 .cs-skin-border > span {
-	border: 1px solid $gray;
-	border-color: inherit;
+	border: 1px solid $medium-gray;
+	border-radius: 3px;
 	transition: background 0.2s, border-color 0.2s;
 }
 
@@ -148,8 +146,8 @@ div.cs-active {
 }
 
 .cs-skin-border .cs-options {
-	color: #2980b9;
-	font-size: 0.75em;
+	color: $dark-gray-2;
+	font-size: 16px;
 	opacity: 0;
 	transition: opacity 0.2s, visibility 0s 0.2s;
 }
@@ -157,13 +155,14 @@ div.cs-active {
 .cs-skin-border.cs-active .cs-options {
 	opacity: 1;
 	transition: opacity 0.2s;
+	margin-top: -2px;
 }
 
 .cs-skin-border ul span {
-	padding: 1em 2em;
+	padding: 0.7em 1.5em;
 	backface-visibility: hidden;
+	border: 1px solid $primary;
 }
-
 .cs-skin-border .cs-options li span:hover,
 .cs-skin-border li.cs-focus span {
 	background-color: $primary;
