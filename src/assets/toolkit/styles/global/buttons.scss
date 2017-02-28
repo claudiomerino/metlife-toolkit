@@ -11,7 +11,7 @@
 		font-weight: 700;
 		line-height: 1;
 		outline: none;
-		padding: 10px 30px;
+		padding: 1em 30px;
 		text-transform: uppercase;
 		transition: all .2s cubic-bezier( .4, 0, .2, 1 );
 	}
@@ -70,6 +70,7 @@
 	// Sizes
 
 	.button-full {
+		margin-top: 30px;
 		display: block;
 		width: 100%;
 	}

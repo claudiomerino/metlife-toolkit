@@ -6,6 +6,7 @@
 		box-shadow: none !important;
 	}
 
+
 	.input {
 		display: inline-block;
 		max-width: 350px;
@@ -47,9 +48,10 @@
 
 	.input__label-content {
 		display: block;
-		padding: 1.6em 0;
+		padding: 7px 0;
 		position: relative;
 		width: 100%;
+		z-index: 100;
 	}
 
 	.input--ichiro {
@@ -60,15 +62,15 @@
 		background: $black-05;
 		color: $dark-gray;
 		display: block;
-		left: 4px;
-		opacity: 0;
-		padding: 0 0.55em;
+		left: 0;
+		opacity: 1;
+		padding: 10px;
 		position: absolute;
-		top: 4px;
+		top: 0;
 		transform-origin: 50% 100%;
-		transform: scale3d(1, 0, 1);
+		transform: scale3d(1, 1, 1);
 		transition: opacity 0.3s, transform 0.3s !important;
-		width: calc(100% - 8px);
+		width: 100%;
 		z-index: 100;
 	}
 
@@ -97,10 +99,9 @@
 		border: none;
 	}
 
-	.input__field--ichiro:focus,
+	.input__field--ichiro,
 	.input--filled .input__field--ichiro {
 		opacity: 1;
-		transform: scale3d(1, 1, 1);
 	}
 
 	.input__field--ichiro:focus + .input__label--ichiro,
@@ -116,7 +117,7 @@
 
 	.input__field--ichiro:focus + .input__label--ichiro .input__label-content--ichiro,
 	.input--filled .input__label-content--ichiro {
-		transform: translate3d(0, -3.15em, 0) scale3d(0.8, 0.8, 1) translateZ(1px);
+		transform: translate3d(0, -2.4em, 0) scale3d(0.8, 0.8, 1) translateZ(1px);
 	}
 
 	.input--error .input__label {

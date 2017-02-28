@@ -25,7 +25,7 @@
 	cursor: pointer;
 	display: block;
 	overflow: hidden;
-	padding: 1em;
+	padding: 10px;
 	position: relative;
 	text-overflow: ellipsis;
 	white-space: nowrap;
@@ -124,7 +124,7 @@ div.cs-active {
 .cs-skin-border > span::after,
 .cs-skin-border .cs-selected span::after {
 	font: normal normal normal 14px/1 FontAwesome;
-	content: "\f063";
+	content: "\f078";
 }
 
 .cs-skin-border ul span::after {
@@ -163,7 +163,7 @@ div.cs-active {
 }
 
 .cs-skin-border ul span {
-	padding: 0.7em 1.5em;
+	padding: 8px 16px;
 	backface-visibility: hidden;
 	border: 1px solid $primary;
 	border-bottom: 0;
