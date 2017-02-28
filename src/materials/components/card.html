@@ -7,7 +7,14 @@ notes: |
 			<section class="card card-blue z-depth-2">
 				<div class="card_container">
 					<section class="card_section">
-						<h4 class="card_title"><strong>Vida APV</strong></h4>
+						<div class="u-row u-row-xs-full middle-xs">
+							<div class="col-xs-6 col-xs-full">
+								<h4 class="card_title"><strong>Vida APV</strong></h4>
+							</div>
+							<div class="col-xs-6 col-xs-full end-xs">
+								<i class="card_icon fa fa-angle-right primary" aria-hidden="true"></i>
+							</div>
+						</div>
 						<p class="f-small"><em>Seguros con ahorro</em></p>
 						<p class="card_item"><strong>Póliza Nº: </strong>0056705543-A</p>
 						<p class="card_item"><strong>Total acumulado a la fecha: </strong>UF 8.556</p>
@@ -20,11 +27,14 @@ notes: |
 							</select>
 						</div>
 						<div class="card_more center-xs end-sm">
-							<a href="" class="f-link">Mostrar más información</a>
+							<a href="" class="f-link openContent" data-open-content="openPay">
+								<span class="openContentText">Mostrar más información</span>
+								<i class="fa fa-angle-down" aria-hidden="true"></i>
+							</a>
 						</div>
 					</section>
 
-					<section class="card_section u-divider">
+					<section class="card_section u-divider toggleContent" data-toggle-content="openPay">
 						<h4 class="card_sub-title"><strong>Pagos:</strong></h4>
 						<ul class="card_table u-row">
 							<li class="card_table-item col-xs-12 col-sm-6 u-space">
