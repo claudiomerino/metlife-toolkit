@@ -26,19 +26,23 @@
 	}
 
 	h3 {
-		font-size: 24px;
+		font-size: 28px;
 	}
 
 	h4 {
-		font-size: 20px;
+		font-size: 24px;
 	}
 
 	h5 {
-		font-size: 18px;
+		font-size: 16px;
 	}
 
 	h6 {
-		font-size: 16px;
+		font-size: 18px;
+	}
+
+	p {
+		margin-bottom: 8px;
 	}
 
 	.f-bigger {
@@ -60,7 +64,6 @@
 		border-bottom: 1px solid transparent;
 		color: $link-rest;
 		line-height: 1.2;
-		padding-bottom: 2px;
 		&:hover {
 			border-bottom: 1px solid $link-hover;
 			color: $link-hover;
@@ -85,8 +88,21 @@
 		line-height: 1.2;
 	}
 
+	.f-legal {
+		font-size: 12px;
+		line-height: 1.2;
+		color: $dark-gray-3;
+	}
+
   .f-error {
     color: $error;
     font-weight: 100;
     padding: 5px 10px;
   }
+
+  @media screen and ( min-width: 48em ) {
+
+	  	h5 {
+			font-size: 20px;
+		}
+	}
