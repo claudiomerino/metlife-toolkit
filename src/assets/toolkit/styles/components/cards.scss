@@ -8,33 +8,64 @@
 
 	.card_container {
 		padding: 1rem;
+		background-color: white;
 	}
 
 	.card-blue {
 		border-color: $primary;
+		.card_icon {
+			color: $primary;
+		}
+	}
+
+	.card_item {
+		line-height: 1.2;
+		&:nth-of-type( even ) {
+			margin-bottom: 8px;
+		}
+		&:nth-of-type( odd ) {
+			margin-bottom: 0;
+		}
+	}
+
+	.card_sub-title {
+		margin-bottom: 10px;
+	}
+
+	.card_title {
+		margin-bottom: 10px;
 	}
 
 	.card_icon {
-		font-size: 38px;
+		font-size: 50px;
 	}
 
 	.card_more {
 		margin: 10px 0;
+		i {
+			font-size: 24px;
+			position: relative;
+			top: 3px;
+		}
 	}
 
 	.card-pink {
 		border-color: $pink;
-	}
-
-	.card_section {
-		padding: 1rem 0;
-		&:first-of-type {
-			padding-top: 0;
+		.card_icon {
+			color: $pink;
 		}
 	}
 
 	.card_list-item-link {
 		padding-left: 3rem;
+	}
+
+	.client-profile_row {
+		padding: 0 1.6rem;
+	}
+
+	.card_section_irow {
+		min-height: 62px;
 	}
 
 	.openContent {

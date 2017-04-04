@@ -34,11 +34,11 @@
 	}
 
 	h5 {
-		font-size: 16px;
+		font-size: 18px;
 	}
 
 	h6 {
-		font-size: 18px;
+		font-size: 16px;
 	}
 
 	p {
@@ -61,11 +61,11 @@
 	}
 
 	.f-link {
-		border-bottom: 1px solid transparent;
+		border-bottom: 1px solid $link-hover;
 		color: $link-rest;
 		line-height: 1.2;
 		&:hover {
-			border-bottom: 1px solid $link-hover;
+			border-bottom: 1px solid transparent;
 			color: $link-hover;
 		}
 	}
@@ -102,7 +102,10 @@
 
   @media screen and ( min-width: 48em ) {
 
-	  	h5 {
-			font-size: 20px;
-		}
+  	h5 {
+		font-size: 20px;
 	}
+	h6 {
+		font-size: 16px;
+	}
+}
