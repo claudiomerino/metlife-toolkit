@@ -6,13 +6,25 @@
 		box-shadow: none !important;
 	}
 
+	.form-error {
+		color: $pink;
+		display: none;
+		line-height: 1.6;
+		margin-bottom: 0;
+		padding: 36px 0 0;
+		position: relative;
+	}
+
+	.is-invalid-input:not(:focus) {
+		border: 1px solid $error-border !important;
+		background-color: #f9ecea;
+	}
 
 	.input {
 		display: inline-block;
-		max-width: 350px;
 		position: relative;
 		vertical-align: top;
-		width: calc(100% - 2em);
+		width: 100%;
 		z-index: 1;
 	}
 
@@ -27,13 +39,11 @@
 		padding: 0.8em;
 		position: relative;
 		width: 60%;
-	}
-
-	.input__field:focus {
-		background-color: $black-05;
-		border-color: $primary;
-		border-radius: 3px;
-		outline: none;
+		&:active,
+		&:focus {
+			border: 1px solid $active-border !important;
+			outline: none;
+		}
 	}
 
 	.input__label {
@@ -48,18 +58,13 @@
 
 	.input__label-content {
 		display: block;
-		padding: 7px 0;
+		padding: 11px 0;
 		position: relative;
 		width: 100%;
 		z-index: 100;
 	}
 
-	.input--ichiro {
-		margin-top: 2em;
-	}
-
 	.input__field--ichiro {
-		background: $black-05;
 		color: $dark-gray;
 		display: block;
 		left: 0;
@@ -82,7 +87,6 @@
 	}
 
 	.input__label--ichiro::before {
-		background: #fff;
 		content: '';
 		height: 100%;
 		left: 0;
@@ -117,7 +121,7 @@
 
 	.input__field--ichiro:focus + .input__label--ichiro .input__label-content--ichiro,
 	.input--filled .input__label-content--ichiro {
-		transform: translate3d(0, -2.4em, 0) scale3d(0.8, 0.8, 1) translateZ(1px);
+		transform: translate3d(-1rem, -2em, 0) scale3d(0.8, 0.8, 1) translateZ(1px);
 	}
 
 	.input--error .input__label {
@@ -127,4 +131,17 @@
 	.input--error .input__field {
 		background-color: $error-light;
 		color: $error;
+	}
+
+	.input--datepicker {
+		.input__field {
+			cursor: pointer;
+		}
+		.material-icons {
+			color: $primary;
+			position: absolute;
+			right: 10px;
+			top: 7px;
+			z-index: 101;
+		}
 	}

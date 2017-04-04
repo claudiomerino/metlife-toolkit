@@ -1,10 +1,10 @@
 
 	<div class="col-xs-4">
 		<section class="u-select u-space">
-			<select class="u-select-tag u-skin-border">
-				<option value="login.html" selected>Personas</option>
-				<option value="login-empresas.html">Corredores o Empresas</option>
-				<option value="login-intermediarios.html">Intermediarios RV</option>
+			<select class="cs-select cs-skin-border" onchange="location = this.value;">
+				<option value="login" data-link="login.html" selected>Personas</option>
+				<option value="login-empresas" data-link="login-empresas.html">Corredores o Empresas</option>
+				<option value="login-intermediarios" data-link="login-intermediarios.html">Intermediarios RV</option>
 			</select>
 		</section>
 	</div>
@@ -12,12 +12,12 @@
 
 	<div class="col-xs-4">
 		<section class="u-select u-space">
-			<select class="u-select-tag u-skin-border select-error">
-				<option value="login.html" selected>Personas</option>
-				<option value="login-empresas.html">Corredores o Empresas</option>
-				<option value="login-intermediarios.html">Intermediarios RV</option>
+			<select class="cs-select cs-skin-border cs-select-error" onchange="location = this.value;">
+				<option value="login" data-link="login.html" selected>Personas</option>
+				<option value="login-empresas" data-link="login-empresas.html">Corredores o Empresas</option>
+				<option value="login-intermediarios" data-link="login-intermediarios.html">Intermediarios RV</option>
 			</select>
 		</section>
 	</div>
 
-	<p class="f-error f-tiny">Remove select-error</p>
+	<p class="f-error f-tiny">Remove .cs-select-error</p>

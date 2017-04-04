@@ -2,8 +2,15 @@
 	@import './../global/color.scss';
 
 	.tabs {
-		border: 0;
 		border-bottom: 1px solid $primary;
+		border: 0;
+		display: flex;
+		overflow-x: auto;
+		overflow-y: hidden;
+		padding: 0 10px;
+		position: relative;
+		white-space: nowrap;
+		width: 100%;
 		&:before {
 			display: none;
 		}
@@ -14,17 +21,55 @@
 		border-bottom-right-radius: 3px;
 		border: 0;
 	}
+	.tabs_content_subtitle{
+		padding: 0;
+		margin: 0;
+		line-height: 1.2;
+	}
+
+	.tabs-panel {
+		padding: 2rem 19px;
+	}
+
+	.tabs_row {
+		padding: 0 1.6rem;
+	}
 
 	.tabs-subtitle {
 		border-bottom: 2px solid $primary;
 		margin-bottom: 1rem;
-		padding: 1rem 0;
+		padding: 0 0 1rem 0;
+	}
+	.tabs-subtitle-profile {
+		border-bottom: 2px solid $primary;
+		margin-bottom: 1rem;
+		padding: 3rem 0 1rem 0;
 	}
 
 	.tabs-title {
+		flex-grow: 1;
 		a {
-			border-bottom: 4px solid white;
 			color: $dark-gray;
+			position: relative;
+			transition: color 0.3s;
+			&:before {
+				background-color: $primary;
+				bottom: 0;
+				content: '';
+				height: 4px;
+				left: 0;
+				position: absolute;
+				transform: scale3d(0, 1, 1);
+				transition: transform 0.1s;
+				width: 100%;
+			}
+		}
+
+		h5 {
+			font-family: 'Arial', sans-serif;
+			font-size: 16px;
+			font-weight: 400;
+
 		}
 
 		& > a {
@@ -34,15 +79,27 @@
 		&.is-active {
 			a {
 				background-color: white;
-				border-bottom: 4px solid $primary;
 				color: $primary;
-				font-weight: bolder;
+				&:before {
+					transform: scale3d(1, 1, 1);
+					transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+					transition-duration: 0.3s;
+				}
 			}
 		}
 	}
 
-	.tabs_wrap_container {
-		background-color: white;
-		border: 1px solid $dark-gray;
-		padding: 0 10px;
+	.tabs_wrap-pink {
+		.tabs-subtitle {
+			border-color: $pink;
+		}
+		.tabs-title a:before {
+			background-color: $pink;
+		}
+	}
+
+	@media screen and ( min-width: 62em ) {
+		.tabs_wrap_container {
+			border: 1px solid #bbb;
+		}
 	}
